@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Humberto de França Santos">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+
+    <!-- Incluir o favicon -->
+    <link rel="icon" href="">
+    <title>Humberto de França Santos - Desenvolvedor Web</title>
+    <style>
+        .w3-btn {
+            width: 200px;
+        }
+
+        .w3-button {
+        }
+
+        body{
+            background: white
+        }
+
+        .w3-panel{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .w3-allerta {
+  font-family: "Allerta Stencil", Sans-serif;
+}
+
+    </style>
+</head>
+<body class="w3-center">
+    <header>
+        <h1 class="w3-cursive">Humberto de França Santos</h1>
+        <h2 class="w3-allerta w3-black">Desenvolvedor Web</h2>
+        <div class="w3-panel w3-monospace w3-center w3-blue w3-large">
+            <p class="w3-padding">Sempre tive vontade de trabalhar com tecnologia e agora resolvi dar o start. Algumas coisas aprendi sozinho e outras pelos cursos que fiz na Alura e, atualmente, na ETEC cursando Desenvolvimento de Sistemas.</p>
+            <p class="w3-padding">Já conheço muito de HTML, CSS puro e com os frameworks. Agora estou indo mais fundo no JavaScript e no React.</p>
+            <p class="w3-padding">Já fiz alguns experimnentos com Python, com Jupyter e fiquei muito feliz em conseguir automatizar algumas tarefas do dia-a-dia e de conhecer o poder dessa linguagem.</p>
+        </div>
+    </header>
+        <h3>Tecnologias</h3>
+            <div class="w3-row">
+                    <div class="w3-third">
+                        <button onclick="tecDetails('HTML')" class="w3-button w3-block w3-left-align">HTML</button>
+        
+                        <div id="HTML" class="w3-hide">
+                            <ul class="w3-ul">
+                                <li>HTML5</li>
+                                <li>Tags semanticas</li>
+                                <li>Boas práticas para o SEO</li>
+                                <li>Utilização do Emmet</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="w3-third">
+                        <button onclick="tecDetails('css')" class="w3-button w3-block w3-left-align">CSS</button>
+    
+                        <div id="css" class="w3-hide">
+                            <ul class="w3-ul">
+                                <li>Responsividade</li>
+                                <li>FlexBox</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="w3-third">
+                        <button onclick="tecDetails('javaScript')" class="w3-button w3-block w3-left-align">JavaScript</button>
+    
+                        <div id="javaScript" class="w3-hide w3-third">
+                            <ul class="w3-ul">
+                                <li>Lógica de programação</li>
+                                <li>Ecmascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="w3-third">
+                        <button onclick="tecDetails('react')" class="w3-button w3-block w3-left-align">React</button>
+    
+                        <div id="react" class="w3-hide w3-third">
+                            <ul class="w3-ul">
+                                <li>Introdução ao React</li>
+                                <li>Biblioteca</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>                    
+
+
+                      CSS
+    JavaScript
+                React
+W3-CSS
+Bootstrap
+Python
+                   Java
+                  
+    
+            <h3 class="w3-xxlarge">Projetos</h3>
+            <div class="w3-cell-row w3-row-padding w3-padding-large">
+                <div class="w3-third w3-stretch">
+                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xxlarge">
+                        <img src="tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
+                        <h4 class="w3-xxlarge">Tela Tempo</h4>
+                        <figcaption class="w3-padding">Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
+                    </figure>
+                </div>
+
+                <div class="w3-third w3-stretch">
+                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xxlarge">
+                        <img src="tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
+                        <h4 class="w3-xxlarge">Tela Tempo</h4>
+                        <figcaption class="w3-padding">Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
+                    </figure>
+                </div>
+
+                <div class="w3-third w3-stretch">
+                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xxlarge">
+                        <img src="tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
+                        <h4 class="w3-xxlarge">Tela Tempo</h4>
+                        <figcaption class="w3-padding">Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+            </div>
+
+            
+
+        <h3>Contato</h3>
+        <h4></h4>
+
+        <script>
+            function tecDetails(id) {
+              var x = document.getElementById(id);
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+            </script>
+</body>
+</html>
