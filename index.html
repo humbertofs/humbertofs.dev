@@ -7,53 +7,31 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-
     <!-- Incluir o favicon -->
     <link rel="icon" href="">
     <title>Humberto de França Santos - Desenvolvedor Web</title>
-    <style>
-        .w3-btn {
-            width: 200px;
-        }
-
-        .w3-button {
-        }
-
-        body{
-            background: white
-        }
-
-        .w3-panel{
-            width: 80%;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        .w3-allerta {
-  font-family: "Allerta Stencil", Sans-serif;
-}
-
-    </style>
 </head>
 <body class="w3-center">
     <header>
         <h1 class="w3-cursive">Humberto de França Santos</h1>
         <h2 class="w3-allerta w3-black">Desenvolvedor Web</h2>
-        <div class="w3-panel w3-monospace w3-center w3-blue w3-large">
+        <div class="w3-panel w3-monospace w3-center w3-blue w3-large apresentacao">
             <p class="w3-padding">Sempre tive vontade de trabalhar com tecnologia e agora resolvi dar o start. Algumas coisas aprendi sozinho e outras pelos cursos que fiz na Alura e, atualmente, na ETEC cursando Desenvolvimento de Sistemas.</p>
             <p class="w3-padding">Já conheço muito de HTML, CSS puro e com os frameworks. Agora estou indo mais fundo no JavaScript e no React.</p>
             <p class="w3-padding">Já fiz alguns experimnentos com Python, com Jupyter e fiquei muito feliz em conseguir automatizar algumas tarefas do dia-a-dia e de conhecer o poder dessa linguagem.</p>
         </div>
     </header>
-        <h3>Tecnologias</h3>
-            <div class="w3-row">
-                    <div class="w3-third">
-                        <button onclick="tecDetails('HTML')" class="w3-button w3-block w3-left-align">HTML</button>
+    <div class="tecnologias">
+        <h3 class="w3-center w3-xxlarge">Tecnologias</h3>
+            <div class="div-tec w3-center">
+                    <div class="w3-large">
+                        <button onclick="tecDetails('html')" class="w3-button w3-block w3-left-align">HTML</button>
         
-                        <div id="HTML" class="w3-hide">
-                            <ul class="w3-ul">
+                        <div id="html" class="w3-hide w3-light-gray w3-border">
+                            <ul class="w3-ul w3-hoverable">
                                 <li>HTML5</li>
                                 <li>Tags semanticas</li>
                                 <li>Boas práticas para o SEO</li>
@@ -62,22 +40,22 @@
                         </div>
                     </div>
 
-                    <div class="w3-third">
+                    <div class="w3-large">
                         <button onclick="tecDetails('css')" class="w3-button w3-block w3-left-align">CSS</button>
     
-                        <div id="css" class="w3-hide">
+                        <div id="css" class="w3-hide w3-light-gray w3-border">
                             <ul class="w3-ul">
                                 <li>Responsividade</li>
                                 <li>FlexBox</li>
-                                <li></li>
+                                <li>Utilização de frameworks W3-CSS e Bootstrap</li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="w3-third">
+                    <div class="w3-large">
                         <button onclick="tecDetails('javaScript')" class="w3-button w3-block w3-left-align">JavaScript</button>
     
-                        <div id="javaScript" class="w3-hide w3-third">
+                        <div id="javaScript" class="w3-hide w3-light-gray w3-border">
                             <ul class="w3-ul">
                                 <li>Lógica de programação</li>
                                 <li>Ecmascript</li>
@@ -85,52 +63,71 @@
                         </div>
                     </div>
                     
-                    <div class="w3-third">
+                    <div class="w3-large">
                         <button onclick="tecDetails('react')" class="w3-button w3-block w3-left-align">React</button>
     
-                        <div id="react" class="w3-hide w3-third">
+                        <div id="react" class="w3-hide w3-light-gray w3-border">
                             <ul class="w3-ul">
                                 <li>Introdução ao React</li>
                                 <li>Biblioteca</li>
                             </ul>
                         </div>
                     </div>
+
+                    <div class="w3-large">
+                      <button onclick="tecDetails('python')" class="w3-button w3-block w3-left-align">Python</button>
+  
+                      <div id="python" class="w3-hide w3-light-gray w3-border">
+                          <ul class="w3-ul">
+                              <li>Introdução ao Python</li>
+                              <li>Criação de script para geração de contrato usando Jupyter</li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="w3-large">
+                    <button onclick="tecDetails('java')" class="w3-button w3-block w3-left-align">Java</button>
+
+                    <div id="java" class="w3-hide w3-light-gray w3-border">
+                        <ul class="w3-ul">
+                            <li>Introdução ao Java</li>
+                            <li>Programação usando o Netbeans</li>
+                        </ul>
+                    </div>
+                </div>
                 
-                </div>                    
-
-
-                      CSS
-    JavaScript
-                React
-W3-CSS
-Bootstrap
-Python
-                   Java
-                  
+                </div>                  
+    </div>
     
             <h3 class="w3-xxlarge">Projetos</h3>
             <div class="w3-cell-row w3-row-padding w3-padding-large">
                 <div class="w3-third w3-stretch">
-                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xxlarge">
-                        <img src="tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
+                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xlarge">
+                      <a href="https://humbertofs.github.io/prev-tempo-tela/">
+                        <img src="./images/tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
                         <h4 class="w3-xxlarge">Tela Tempo</h4>
                         <figcaption class="w3-padding">Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
+                      </a>
                     </figure>
                 </div>
 
                 <div class="w3-third w3-stretch">
-                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xxlarge">
-                        <img src="tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
-                        <h4 class="w3-xxlarge">Tela Tempo</h4>
-                        <figcaption class="w3-padding">Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
-                    </figure>
+                  <figure class="w3-card-4 w3-padding w3-blue w3-round-xlarge">
+                    <a href="https://github.com/humbertofs/7DaysOfCode-HTML-e-CSS-7-7">
+                        <img src="./images/7DaysOfCode.png" class="w3-round w3-padding" width="100%" alt="Tela do projeto finalizado">
+                        <h4 class="w3-xxlarge">Optimus Tech</h4>
+                        <figcaption class="w3-padding">Um dos desafios da série 7 Days of Code da Alura. O objetivo era consultar uma página no Figma e a desenvolver usando HTML e CSS.</figcaption>
+                      </a>
+                  </figure>
                 </div>
 
                 <div class="w3-third w3-stretch">
-                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xxlarge">
-                        <img src="tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
-                        <h4 class="w3-xxlarge">Tela Tempo</h4>
-                        <figcaption class="w3-padding">Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
+                    <figure class="w3-card-4 w3-padding w3-blue w3-round-xlarge">
+                      <a href="https://humbertofs.github.io/Projeto-W3CSS">
+                        <img src="./images/projeto-etec.png" class="w3-round w3-padding" width="100%" alt="">
+                        <h4 class="w3-xxlarge">Projeto ETEC - W3CSS</h4>
+                        <figcaption class="w3-padding">Em uma das atividades do curso de Desenvolvimento de Sistemas na ETEC, foi proposto elaborar uma single page utilizando o framework CSS da W3 Schools, o W3CSS.</figcaption>
+                      </a>
                     </figure>
                 </div>
                 
@@ -140,17 +137,21 @@ Python
             
 
         <h3>Contato</h3>
-        <h4></h4>
 
         <script>
             function tecDetails(id) {
-              var x = document.getElementById(id);
+              const x = document.getElementById(id);
               if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
               } else { 
                 x.className = x.className.replace(" w3-show", "");
               }
             }
+
+            const firstDiv = document.querySelector('.div-tec.w3-center > div:first-child');
+                if (firstDiv) {
+                firstDiv.style.backgroundColor = 'transparent';
+}
             </script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.w3-btn {
+    width: 200px;
+}
+
+.w3-button {
+}
+
+body{
+    width: 100%;
+    background: white;
+}
+
+.w3-panel{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.w3-allerta {
+font-family: "Allerta Stencil", Sans-serif;
+}
+
+.div-tec {
+    width: 80%;
+}
+
+.item-tec:hover {
+    background-color: gray;
+}
+
+ul, li{
+    border: none;
+}
+
+.apresentacao {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tecnologias {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
