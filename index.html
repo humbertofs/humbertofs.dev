@@ -19,9 +19,10 @@
         <h1 class="w3-cursive">Humberto de França Santos</h1>
         <h2 class="w3-allerta w3-black">Desenvolvedor Web</h2>
         <div class="w3-panel w3-monospace w3-center w3-blue w3-large apresentacao">
-            <p class="w3-padding">Sempre tive vontade de trabalhar com tecnologia e agora resolvi dar o start. Algumas coisas aprendi sozinho e outras pelos cursos que fiz na Alura e, atualmente, na ETEC cursando Desenvolvimento de Sistemas.</p>
-            <p class="w3-padding">Já conheço muito de HTML, CSS puro e com os frameworks. Agora estou indo mais fundo no JavaScript e no React.</p>
-            <p class="w3-padding">Já fiz alguns experimnentos com Python, com Jupyter e fiquei muito feliz em conseguir automatizar algumas tarefas do dia-a-dia e de conhecer o poder dessa linguagem.</p>
+            <p class="w3-padding">Sempre fui fascinado por tecnologia e, finalmente, decidi transformar essa paixão em carreira. Sou formado em Desenvolvimento de Sistemas pela ETEC e venho aprimorando minhas habilidades por meio de cursos na Alura e projetos práticos.</p>
+            <p class="w3-padding">Tenho domínio de HTML e CSS, tanto no uso puro quanto com frameworks modernos. Atualmente, estou aprofundando meus conhecimentos em JavaScript e React, explorando o desenvolvimento de interfaces dinâmicas e responsivas.</p>
+            <p class="w3-padding">Além disso, já experimentei Python com Jupyter Notebook e fiquei impressionado com o poder da automação para otimizar tarefas do dia a dia.</p>
+            <p class="w3-padding">Seja no desenvolvimento web, na organização de dados ou na criação de soluções eficientes, estou sempre em busca de novos desafios e aprendizados! 🚀</p>
         </div>
     </header>
     <div class="tecnologias">
@@ -106,7 +107,7 @@
                       <a href="https://humbertofs.github.io/prev-tempo-tela/">
                         <img src="./images/tela-tempo-massa-fm.jpg" class="w3-round w3-padding" width="100%" alt="">
                         <h4 class="w3-xxlarge">Tela Tempo</h4>
-                        <figcaption class="w3-padding">Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
+                        <figcaption>Essa página exibe o logo da empresa, a temperatura na hora, a previsão e a condição climática. Foi utilizada a API da Open Weather Map em Json. Além disso, foi instalada em um Raspberry Pi um sistema de <em>digital signage</em>, onde é possível visualizar a condição climática em uma tela no coworking da empresa</figcaption>
                       </a>
                     </figure>
                 </div>
@@ -116,7 +117,7 @@
                     <a href="https://github.com/humbertofs/7DaysOfCode-HTML-e-CSS-7-7">
                         <img src="./images/7DaysOfCode.png" class="w3-round w3-padding" width="100%" alt="Tela do projeto finalizado">
                         <h4 class="w3-xxlarge">Optimus Tech</h4>
-                        <figcaption class="w3-padding">Um dos desafios da série 7 Days of Code da Alura. O objetivo era consultar uma página no Figma e a desenvolver usando HTML e CSS.</figcaption>
+                        <figcaption>Um dos desafios da série 7 Days of Code da Alura. O objetivo era consultar uma página no Figma e a desenvolver usando HTML e CSS.</figcaption>
                       </a>
                   </figure>
                 </div>
@@ -126,7 +127,7 @@
                       <a href="https://humbertofs.github.io/Projeto-W3CSS">
                         <img src="./images/projeto-etec.png" class="w3-round w3-padding" width="100%" alt="">
                         <h4 class="w3-xxlarge">Projeto ETEC - W3CSS</h4>
-                        <figcaption class="w3-padding">Em uma das atividades do curso de Desenvolvimento de Sistemas na ETEC, foi proposto elaborar uma single page utilizando o framework CSS da W3 Schools, o W3CSS.</figcaption>
+                        <figcaption>Em uma das atividades do curso de Desenvolvimento de Sistemas na ETEC, foi proposto elaborar uma single page utilizando o framework CSS da W3 Schools, o W3CSS.</figcaption>
                       </a>
                     </figure>
                 </div>
@@ -135,8 +136,15 @@
             </div>
 
             
-
-        <h3>Contato</h3>
+        <div class="contato w3-padding-16">
+            <h3>Contato</h3>
+            <p>Telefone: (11) 9 99430-7786</p>
+            <div id="emailContainer">
+                <p class="email">E-mail: 
+                <button id="mostrarEmail" onclick="mostrarEmail()">Clique para ver o email</button>
+            </div>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/humbertofs/">https://www.linkedin.com/in/humbertofs/</a></p>
+        </div>
 
         <script>
             function tecDetails(id) {
@@ -151,7 +159,22 @@
             const firstDiv = document.querySelector('.div-tec.w3-center > div:first-child');
                 if (firstDiv) {
                 firstDiv.style.backgroundColor = 'transparent';
-}
+            }
+
+            // função ocultar e-mail
+
+            usuario = 'humbertofs';
+            dominio = 'msn.com';
+            conector = '@';
+
+            function escreveLinkEmail () {
+                return usuario + conector + dominio;
+            }
+
+            // Função que mostra o e-mail concatenado
+            function mostrarEmail () {
+                document.getElementById("emailContainer").innerHTML = "<a href='mailto:" + escreveLinkEmail() + "'>" + "E-mail: " + escreveLinkEmail() + "</a>";
+            }
             </script>
 </body>
 </html>
